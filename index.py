@@ -5,7 +5,7 @@ def get_ip_by_hostname():
     hostname = input("Please enter hostname: ")
 
     try:
-        return f'Hostname: {hostname}/n IP: {socket.gethostbyname(hostname)}'
+        return f'Hostname: {hostname}\n IP: {socket.gethostbyname(hostname)}'
     except socket.gaierror as error:
         return f'Invalid hostname - {error}'
 
